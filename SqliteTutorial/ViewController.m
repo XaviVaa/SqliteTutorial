@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AddViewController.h"
+#import "ListViewController.h"
 
 @interface ViewController ()
 
@@ -36,7 +37,9 @@
 
 - (IBAction)listado
 {
+    ListViewController *listController = [[ListViewController alloc]initWithNibName:nil bundle:nil];
     
+    [self.navigationController pushViewController:listController animated:YES];
 }
 
 @end
