@@ -23,6 +23,8 @@
 		3F37DF4117A81FF70043FB9D /* ApprendemosBD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3F37DF4017A81FF70043FB9D /* ApprendemosBD.sqlite */; };
 		3F37DF4A17A8226F0043FB9D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F37DF4817A8226F0043FB9D /* ListViewController.m */; };
 		3F37DF4B17A8226F0043FB9D /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F37DF4917A8226F0043FB9D /* ListViewController.xib */; };
+		3F37DF4F17A8853E0043FB9D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F37DF4D17A8853E0043FB9D /* DetailViewController.m */; };
+		3F37DF5017A8853E0043FB9D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F37DF4E17A8853E0043FB9D /* DetailViewController.xib */; };
 		3FBBF46117A744140072B1FC /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FBBF46017A744140072B1FC /* Tutorial.m */; };
 		3FBBF46317A745160072B1FC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FBBF46217A745160072B1FC /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,9 @@
 		3F37DF4717A8226F0043FB9D /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		3F37DF4817A8226F0043FB9D /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		3F37DF4917A8226F0043FB9D /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		3F37DF4C17A8853E0043FB9D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3F37DF4D17A8853E0043FB9D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3F37DF4E17A8853E0043FB9D /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		3FBBF45F17A744140072B1FC /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
 		3FBBF46017A744140072B1FC /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
 		3FBBF46217A745160072B1FC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -116,6 +121,9 @@
 				3F37DF4717A8226F0043FB9D /* ListViewController.h */,
 				3F37DF4817A8226F0043FB9D /* ListViewController.m */,
 				3F37DF4917A8226F0043FB9D /* ListViewController.xib */,
+				3F37DF4C17A8853E0043FB9D /* DetailViewController.h */,
+				3F37DF4D17A8853E0043FB9D /* DetailViewController.m */,
+				3F37DF4E17A8853E0043FB9D /* DetailViewController.xib */,
 			);
 			path = SqliteTutorial;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 				3F1D1F5D17A73C3100DFDF26 /* AddViewController.xib in Resources */,
 				3F37DF4117A81FF70043FB9D /* ApprendemosBD.sqlite in Resources */,
 				3F37DF4B17A8226F0043FB9D /* ListViewController.xib in Resources */,
+				3F37DF5017A8853E0043FB9D /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +236,7 @@
 				3F1D1F5C17A73C3100DFDF26 /* AddViewController.m in Sources */,
 				3FBBF46117A744140072B1FC /* Tutorial.m in Sources */,
 				3F37DF4A17A8226F0043FB9D /* ListViewController.m in Sources */,
+				3F37DF4F17A8853E0043FB9D /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

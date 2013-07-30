@@ -8,6 +8,7 @@
 
 #import "ListViewController.h"
 #import "Tutorial.h"
+#import "DetailViewController.h"
 
 @interface ListViewController ()
 
@@ -53,6 +54,21 @@
     // Return the number of rows in the section.
     
     return [tutorialsArray count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Creamos una instancia del controlador de la vista detalle.
+    DetailViewController *detailController = [[DetailViewController alloc]initWithNibName:nil bundle:nil];
+    
+    // Recuperamos el tutoriial de la posicion del array igual a la fila seleccionada.
+    Tutorial *auxTutorial = [tutorialsArray objectAtIndex:indexPath.row];
+    
+    // Establecemos al controlador el tutorial que debemos pasarle.
+    [detailController setAuxTutorial:auxTutorial];
+    
+    // Lanzamos el controlador de detalle de nuestro tutorial.
+    [self.navigationController pushViewController:detailController animated:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
