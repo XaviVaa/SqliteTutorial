@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AddViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)addTutorial
+{
+    AddViewController *addController = [[AddViewController alloc]initWithNibName:nil bundle:nil];
+    
+    [self.navigationController pushViewController:addController animated:YES];
+}
+
+- (IBAction)listado
+{
+    
 }
 
 @end
