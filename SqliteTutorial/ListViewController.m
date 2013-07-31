@@ -32,11 +32,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
-    tutorialsArray = [[NSMutableArray alloc]init];
+    NSLog(@"Tutorial count = %d",[tutorialsArray count]);
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
     [self loadTutorialsFromDB];
     [tableView reloadData];
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -103,6 +106,13 @@
 
 -(void)loadTutorialsFromDB
 {
+    if(tutorialsArray != nil)
+    {
+        [tutorialsArray removeAllObjects];
+    } else {
+        tutorialsArray = [[NSMutableArray alloc]init];
+    }
+    
     sqlite3 *database;
     
     sqlite3_stmt *compiledStatement;

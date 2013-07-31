@@ -8,13 +8,18 @@
 
 #import "ViewController.h"
 #import "Tutorial.h"
+#import "AppDelegate.h"
 
 @interface DetailViewController : ViewController
 {
     IBOutlet UILabel *nombreLabel;
     IBOutlet UILabel *sistemaLabel;
     IBOutlet UILabel *terminadoLabel;
+    AppDelegate *appDelegate;
 }
 
 @property(nonatomic, retain) Tutorial *auxTutorial;
+-(IBAction)Editar;
+-(IBAction)Eliminar;
+
 @end
