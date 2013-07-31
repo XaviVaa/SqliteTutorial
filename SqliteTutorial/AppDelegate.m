@@ -34,6 +34,7 @@
     UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:self.viewController];
     // Establecemos como principal de la ventana el navigation.
     self.window.rootViewController = navController;
+    navController.navigationBar.barStyle = UIBarStyleBlack;
     [self.window makeKeyAndVisible];
     return YES;
 }
